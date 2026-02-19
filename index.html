@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - SKWorld Agent Skills Marketplace</title>
+    <meta name="description" content="Discover, share, and deploy AI agent skills for your pengu workforce. Build once, deploy everywhere across the SKWorld ecosystem.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .header {
+            padding: 3rem 2rem;
+            text-align: center;
+            background: rgba(0, 200, 150, 0.05);
+        }
+
+        .logo {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.3); }
+        }
+
+        .title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00C896, #00B4D8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            color: #7DDFCA;
+        }
+
+        .skills-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .skill-card {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 200, 150, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.08);
+            box-shadow: 0 10px 30px rgba(0, 200, 150, 0.15);
+        }
+
+        .skill-card h3 {
+            color: #00C896;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: rgba(0, 200, 150, 0.15);
+            color: #7DDFCA;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin: 0.2rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(45deg, #00C896, #00B4D8);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #0F2027;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.3);
+            color: #00C896;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background: rgba(0,0,0,0.4);
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="background: rgba(0,0,0,0.3); padding: 1rem 2rem; font-size: 0.9rem;">
+        <a href="https://skworld.io" style="color: #87CEEB; text-decoration: none;">🐧 SKWorld</a> →
+        <span>🧩 Skills Marketplace</span>
+    </div>
+
+    <header class="header">
+        <div class="logo">🧩</div>
+        <h1 class="title">Skills</h1>
+        <p class="tagline">Agent Skills Marketplace for the SKWorld Ecosystem</p>
+        <p>Build Once. Deploy Everywhere. Empower Every Agent.</p>
+    </header>
+
+    <section class="skills-section">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #00C896; margin-bottom: 3rem;">
+            Featured Skill Categories
+        </h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>🤖 Agent Management</h3>
+                <p>Skills for deploying, monitoring, and orchestrating AI agent teams across your infrastructure.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="skill-tag">orchestration</span>
+                    <span class="skill-tag">deployment</span>
+                    <span class="skill-tag">monitoring</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>🔒 Security & Auth</h3>
+                <p>Authentication, authorization, and security scanning skills for zero-trust agent environments.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="skill-tag">oauth</span>
+                    <span class="skill-tag">scanning</span>
+                    <span class="skill-tag">capauth</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>💬 Communication</h3>
+                <p>Discord bots, email handling, notification routing, and inter-agent messaging skills.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="skill-tag">discord</span>
+                    <span class="skill-tag">email</span>
+                    <span class="skill-tag">messaging</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>📊 Data & Analytics</h3>
+                <p>Data ingestion, transformation, vector search, and graph analytics skills.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="skill-tag">vectors</span>
+                    <span class="skill-tag">graphs</span>
+                    <span class="skill-tag">ETL</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>🔧 Context Separation</h3>
+                <p>Skills for managing isolated agent contexts, memory boundaries, and secure data compartments.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="skill-tag">isolation</span>
+                    <span class="skill-tag">memory</span>
+                    <span class="skill-tag">boundaries</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>📢 Marketing & Content</h3>
+                <p>Content generation, social media automation, SEO optimization, and campaign management skills.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="skill-tag">content</span>
+                    <span class="skill-tag">social</span>
+                    <span class="skill-tag">SEO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Build Skills. Empower Agents.</h2>
+        <p style="font-size: 1.3rem; margin-bottom: 3rem;">
+            Create skills that any agent in the SKWorld ecosystem can use.
+        </p>
+
+        <a href="https://github.com/smilinTux" class="cta-button">
+            📦 Browse Skills on GitHub
+        </a>
+
+        <a href="https://skworld.io#join" class="cta-button">
+            🐧 Join the Coalition
+        </a>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 2rem;">
+            <h3 style="color: #7DDFCA; margin-bottom: 1rem;">🧩 Part of the SKWorld Ecosystem</h3>
+            <p>Open skills for open agents. Built by pengus, for pengus.</p>
+        </div>
+
+        <div>
+            <a href="https://skworld.io" style="color: #87CEEB; text-decoration: none; margin: 0 1rem;">🌍 SKWorld</a>
+            <a href="https://skstacks.io" style="color: #87CEEB; text-decoration: none; margin: 0 1rem;">⚡ Platform</a>
+            <a href="https://sksecurity.io" style="color: #87CEEB; text-decoration: none; margin: 0 1rem;">🛡️ Security</a>
+            <a href="https://github.com/smilinTux" style="color: #87CEEB; text-decoration: none; margin: 0 1rem;">📦 GitHub</a>
+        </div>
+
+        <p style="margin-top: 2rem; opacity: 0.7;">
+            &copy; 2026 Bing Chilling Enterprises &bull; Waddle Together, Win Together 🐧
+        </p>
+    </footer>
+</body>
+</html>
